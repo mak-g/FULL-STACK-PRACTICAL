@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INSTYLE</title>
+    <!-- Fontawesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
+      }
+      .container {
+        height: 100%;
+        width: 100%;
+      }
+
+      .header .show-btn:hover,
+      .hide-btn:hover {
+        color: black;
+        /* transition: 2s; */
+      }
+      .show-btn,
+      .hide-btn {
+        font-size: 30px;
+        color: white;
+        line-height: 80px;
+        display: none;
+      }
+      .show-btn {
+        float: right;
+      }
+
+      #chk {
+        position: absolute;
+        visibility: hidden;
+        z-index: -10;
+      }
+
+      
+        .header {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          height: 80px;
+          background-color: rgb(38,38,38);
+          /* display: flex;
+            justify-content:space-evenly;
+            align-content: center; */
+        }
+        .menu {
+          list-style: none;
+          text-align: center;
+          float: right;
+        }
+        .menu li {
+          display: inline-block;
+          line-height: 80px;
+        }
+        .menu li a {
+          display: block;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: white;
+          width: 100px;
+          font-size: 15px;
+          transition: 1s;
+        }
+        .menu li a:hover {
+          background-color: white;
+          color: black;
+        }
+        #text {
+          font-size: 40px;
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: bolder;
+        }
+        .banner {
+          height: 650px;
+          margin-top: 80px;
+          overflow: hidden;
+          background-image: url(../images/nick-arnot-AuCrXk0pLWo-unsplash.jpg);
+          margin-bottom: 80px;
+          background-size: 100% 100%;
+        }
+        .banner h1 {
+         
+          font-size: 80px;
+          color: white;
+         position: absolute;
+         bottom: 200px;
+         left: 450px;
+        }
+        
+      
+      
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <input type="checkbox" id="chk" />
+        <label for="chk" class="show-btn">
+          <i class="fa fa-bars"></i>
+        </label>
+        <ul class="menu" id="menu">
+            <div style="display:inline; justify-content: left; margin-left: 0px; margin-right: 380px;color: white;font-size: 30px;font-weight: 600;">INSTYLE
+            
+         </div>
+          <li><a href="#"> HOME </a></li>
+          <li><a href="#about"> THE BRAND </a></li>
+          <li><a href="#team"> PORTFOLIO </a></li>
+          <li><a href="#tech"> SHOP</a></li>
+          <li><a href="#contact"> BLOG</a></li>
+            <li><a href="#contact"> CONTACT</a></li>
+            <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <label for="chk" class="hide-btn">
+            <i class="fa fa-times"></i>
+          </label>
+        </ul>
+      </div>
+      <div class="banner">
+        <h1>Style is Forever
+          <br>
+          <button style="color: white; background: transparent;outline: none;border-color: white;font-size: 30px; padding: 15px; position: absolute;left: 200px;top: 90px;"> <a href="#" style="text-decoration:none; color: white;"> Read More </a></button>
+        </h1>
+        <div class="box1" style="list-style: none; font-size: 20px;padding: 20px;position: absolute;bottom: 0px; color: black; height: 200px; width: 80px; background-color: white;">
+          <li style="margin: 10px;padding-bottom: 20px;"><a href="#"><i    style="color: black;" class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+            <li style="margin: 10px;padding-bottom: 20px;"><a href="#"><i style="color: black;" class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li style="margin: 10px;padding-bottom: 20px;"><a href="#"><i style="color: black;" class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </div>
+        <div class="box-2" style="position: absolute; bottom: 10px;background-image: url(/images/1.jpg); background-size: 100% 100%;border: 10px solid white; height: 300px; width: 250px; background-color: white; right: 0px;"></div>
+      </div>
+      
+      </div>
+    </div>
+  </body>
+</html>
